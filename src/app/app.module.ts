@@ -9,6 +9,7 @@ import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import {StockManageComponent} from './stock/stock-manage/stock-manage.component';
+import { StarsComponent } from './stars/stars.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {StockManageComponent} from './stock/stock-manage/stock-manage.component'
     MenuComponent,
     FooterComponent,
     SidebarComponent,
-    StockManageComponent
+    StockManageComponent,
+    StarsComponent
   ],
   imports: [
     BrowserModule
