@@ -33,7 +33,8 @@ const routeConfig: Routes = [
     FooterComponent,
     SidebarComponent,
     StockManageComponent,
-    StarsComponent
+    StarsComponent,
+
   ],
   imports: [
     BrowserModule,
