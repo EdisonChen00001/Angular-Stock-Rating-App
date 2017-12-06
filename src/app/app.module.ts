@@ -13,13 +13,22 @@ import {StockManageComponent} from './stock/stock-manage/stock-manage.component'
 import { StarsComponent } from './stars/stars.component';
 import { Routes } from "@angular/router";
 import { RouterModule } from '@angular/router';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 const routeConfig: Routes = [
   {
+    path:'',
+    redirectTo: '/DashboardComponent',
+    pathMatch:'full'
+  },
+  {
     path:'stock',
     component:StockManageComponent,
-    pathMatch:'full'
+  },
+  {
+    path:'dashboard',
+    component:DashboardComponent,
   }
 ];
 
@@ -34,7 +43,7 @@ const routeConfig: Routes = [
     SidebarComponent,
     StockManageComponent,
     StarsComponent,
-
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
