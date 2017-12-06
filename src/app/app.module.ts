@@ -14,6 +14,7 @@ import { StarsComponent } from './stars/stars.component';
 import { Routes } from "@angular/router";
 import { RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { APP_BASE_HREF } from '@angular/common';
 
 
 const routeConfig: Routes = [
@@ -51,7 +52,7 @@ const routeConfig: Routes = [
     HttpModule,
     RouterModule.forRoot(routeConfig)
   ],
-  providers: [],
+  providers: [ { provide: APP_BASE_HREF, useValue: '/' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
