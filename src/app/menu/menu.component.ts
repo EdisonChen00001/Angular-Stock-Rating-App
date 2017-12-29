@@ -9,6 +9,7 @@ import { Router } from "@angular/router";
 export class MenuComponent implements OnInit {
 
   menus:Array<Menu>;
+  currentMenuId:number;
 
   constructor(public router:Router) { }
 
@@ -21,6 +22,7 @@ export class MenuComponent implements OnInit {
 
   nav(menu:Menu){
     this.router.navigateByUrl(menu.link);
+    this.currentMenuId = menu.id //get current menu id
   }
 }
 
