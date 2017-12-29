@@ -15,6 +15,7 @@ import { Routes } from "@angular/router";
 import { RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { APP_BASE_HREF } from '@angular/common';
+import { StockFormComponent } from './stock/stock-form/stock-form.component';
 
 
 const routeConfig: Routes = [
@@ -30,6 +31,10 @@ const routeConfig: Routes = [
   {
     path:'dashboard',
     component:DashboardComponent,
+  },
+  {
+    path:'stock/:id',
+    component:StockFormComponent
   }
 ];
 
@@ -44,7 +49,8 @@ const routeConfig: Routes = [
     SidebarComponent,
     StockManageComponent,
     StarsComponent,
-    DashboardComponent
+    DashboardComponent,
+    StockFormComponent
   ],
   imports: [
     BrowserModule,
