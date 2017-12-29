@@ -14,13 +14,13 @@ export class MenuComponent implements OnInit {
 
   ngOnInit() {
     this.menus = [
-      new Menu(1,'index','dashborad'),
+      new Menu(1,'index','dashboard'),
       new Menu(2,'stock manage','stock')
     ];
   }
 
-  nav(url:string){
-    this.router.navigateByUrl(url);
+  nav(menu:Menu){
+    this.router.navigateByUrl(menu.link);
   }
 }
 
